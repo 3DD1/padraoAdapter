@@ -1,4 +1,4 @@
-public class AnfabioAquatico {
+public class CarroAquatico {
     private String aquatico;
 
     public String getAquatico() {

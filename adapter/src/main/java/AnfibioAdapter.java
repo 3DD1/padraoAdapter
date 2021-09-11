@@ -1,4 +1,4 @@
-public class AnfibioAdapter  extends AnfabioAquatico{
+public class AnfibioAdapter  extends CarroAquatico {
 
     private IAnfibio anfibioEstrada;
 
@@ -19,17 +19,17 @@ public class AnfibioAdapter  extends AnfabioAquatico{
         return anfibioEstrada.getAnfibio();
     }
 
-    public String adaptarAnfibio(){
-        if (this.getAquatico() == "Lama"){
-            anfibioEstrada.setAnfibio("Rio");
-        }else if(this.getAquatico() == "Terra"){
-            anfibioEstrada.setAnfibio("Lagoa");
-        }else if(this.getAquatico() == "Areia"){
-            anfibioEstrada.setAnfibio("Mar");
+    public void salvarAnfibio(){
+        if (anfibioEstrada.getAnfibio().equals("Lama")){
+            this.setAquatico("Rio");
+        }else if(anfibioEstrada.getAnfibio().equals("Terra")){
+            this.setAquatico("Lagoa");
+        }else if(anfibioEstrada.getAnfibio().equals("Areia")){
+            this.setAquatico("Mar");
         }else{
-            anfibioEstrada.setAnfibio("Não transforma");
+            this.setAquatico("Não salva");
         }
-        return anfibioEstrada.getAnfibio();
+
     }
 
 }

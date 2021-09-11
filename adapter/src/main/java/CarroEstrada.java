@@ -1,4 +1,4 @@
-public class AnfibioEstrada implements IAnfibio{
+public class CarroEstrada implements IAnfibio{
     private String estrada;
 
     @Override

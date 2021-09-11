@@ -1,23 +1,23 @@
-public class Anfibio {
+public class Carro {
     IAnfibio anfibio;
     AnfibioAdapter persistencia;
 
-    public Anfibio(){
-        anfibio = new AnfabioEstrada();
+    public Carro(){
+        anfibio = new CarroEstrada();
         persistencia = new AnfibioAdapter(anfibio);
     }
 
     public void setAnfibio(String estrada){
         anfibio.setAnfibio(estrada);
-        persistencia.adaptarAnfibio();
+        persistencia.salvarAnfibio();
     }
 
     public String getAnfibio(){
         return persistencia.transformaAnfibio();
     }
-    /*
+
     public String getAquatico(){
         return persistencia.getAquatico();
     }
-    */
+
 }
