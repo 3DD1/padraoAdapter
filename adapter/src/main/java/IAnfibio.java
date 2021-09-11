@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface IAnfibio {
+public interface IAnfibio {
+    String getAnfibio();
+    void setAnfibio(String anfabio);
 }
