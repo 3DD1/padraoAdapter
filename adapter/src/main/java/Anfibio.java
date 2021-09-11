@@ -9,11 +9,11 @@ public class Anfibio {
 
     public void setAnfibio(String estrada){
         anfibio.setAnfibio(estrada);
-        persistencia.salvarAnfibio();
+        persistencia.adaptarAnfibio();
     }
 
     public String getAnfibio(){
-        return persistencia.recuperarAnfibio();
+        return persistencia.transformaAnfibio();
     }
     /*
     public String getAquatico(){
