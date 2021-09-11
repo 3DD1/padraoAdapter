@@ -7,8 +7,17 @@ public class Anfibio {
         persistencia = new AnfibioAdapter(anfibio);
     }
 
-    public void setAnfibio(String anfibio){
-        anfibio.setAnfibio()
+    public void setAnfibio(String estrada){
+        anfibio.setAnfibio(estrada);
+        persistencia.salvarAnfibio();
+    }
+
+    public String getAnfibio(){
+        return persistencia.recuperarAnfibio();
+    }
+
+    public String getAquatico(){
+        return persistencia.getAquatico();
     }
 
 }
