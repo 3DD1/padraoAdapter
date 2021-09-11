@@ -15,9 +15,9 @@ public class Anfibio {
     public String getAnfibio(){
         return persistencia.recuperarAnfibio();
     }
-
+    /*
     public String getAquatico(){
         return persistencia.getAquatico();
     }
-
+    */
 }
